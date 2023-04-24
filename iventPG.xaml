@@ -1,0 +1,21 @@
+﻿<Window x:Class="something.iventPG"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:something"
+        mc:Ignorable="d"
+        Title="iventPG" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="ivents_LB" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="add" Grid.Column="1" Content="Добавить событие" HorizontalAlignment="Stretch" VerticalAlignment="Top" Click="add_Click"/>
+        <TextBlock x:Name="enter" Grid.Column="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
+
+
+    </Grid>
+</Window>
